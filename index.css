@@ -1,20 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
-    display: grid;
-    grid-template-columns: 3em 4fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.blog-title {
-    grid-column: 2/3;
+.left,
+.right {
+    display: flex;
+    flex-direction: row;
 }
 
 
+.logo{
+  width: 50px;
+  height: 50px;
+
+}
+
+h2,
+h3,
+h4,
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h4{
+    display: inline-block;
+    margin-left: 1em;
+}
 
 main {
-    display: grid;
-    grid-template-columns: 1em 2em 400px auto;
-    grid-template-rows: 150px 30px 70px 80px;
-    
+    position: relative;
 }
+
+
+.image-firstfPage {
+    width: 100%;
+    border-radius: 5%;
+   
+}
+
+.summary {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 0.9rem;
+    width: 70%;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5;
+}
+
+
+
 
 a:hover ,
 a:visited{
@@ -22,13 +71,9 @@ a:visited{
 
 }
 
-.image {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
+
+
+
 
 .image-me {
     width: 30%;
@@ -36,25 +81,6 @@ a:visited{
     border-radius: 50%;
     margin-left: 2em;
 }
-
-main .date {
-    color: lightgrey;
-    grid-column: 3/-1;
-    grid-row: 2;
-}
-
-main .title {
-    color: white;
-    grid-column: 3/-3;
-    grid-row: 3;
-}
-
-main .description {
-    color: lightgrey;
-    grid-column: 3/-3;
-    grid-row:4;
-}
-
 
 .projects {
     display: grid;
@@ -67,6 +93,11 @@ main .description {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 10%;
+
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
 
 }
 
@@ -94,9 +125,23 @@ footer {
 
 @media (min-width: 600px) {
 
+    .image-firstfPage,
     .image-article {
-        max-width: 900px;
+        max-height: 50vh;
+        max-width: 100%;
+        object-fit: cover;
         margin: auto;
+    }
+
+    .image-article {
+        max-height: 70%;
+        max-width: 70%;
+    }
+
+    .summary {
+        font-size: 1em;
+        bottom: 30px;
+        width: 40%;
     }
     
     .article {
