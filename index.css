@@ -97,6 +97,11 @@ a:visited{
     height: 100%;
     border-radius: 10%;
 
+    
+
+}
+
+.image {
     box-shadow: 10px 10px 5px #ccc;
     -moz-border-radius:25px;
     -webkit-border-radius:25px;
