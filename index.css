@@ -1,6 +1,6 @@
 header {
     display: grid;
-    grid-template-columns: 2em 4fr 1fr 1fr;
+    grid-template-columns: 3em 4fr 1fr 1fr;
 }
 
 .blog-title {
@@ -11,7 +11,7 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 2em 400px auto;
+    grid-template-columns: 1em 2em 400px auto;
     grid-template-rows: 150px 30px 70px 80px;
     
 }
@@ -39,19 +39,19 @@ a:visited{
 
 main .date {
     color: lightgrey;
-    grid-column: 2/-1;
+    grid-column: 3/-1;
     grid-row: 2;
 }
 
 main .title {
     color: white;
-    grid-column: 2/-3;
+    grid-column: 3/-3;
     grid-row: 3;
 }
 
 main .description {
     color: lightgrey;
-    grid-column: 2/-3;
+    grid-column: 3/-3;
     grid-row:4;
 }
 
