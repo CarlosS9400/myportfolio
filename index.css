@@ -119,6 +119,7 @@ footer {
     display: grid;
     margin: auto;
     width: 100%;
+    border-radius: 5%;
 }
 
 
@@ -136,6 +137,7 @@ footer {
     .image-article {
         max-height: 70%;
         max-width: 70%;
+        border-radius: 5%;
     }
 
     .summary {
