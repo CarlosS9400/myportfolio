@@ -14,18 +14,18 @@ header {
    
 
     display: grid;
-    grid-template-columns: 300px 2fr;
+    grid-template-columns: 200px 2fr;
     grid-template-areas:
       "logo menu";
     grid-gap: 0 1em;
 
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     
 
 }
 .left {
-   
+    background: red;
     grid-area: logo;
 }
 
@@ -64,7 +64,7 @@ header {
     width: 200px;
     height: 40px;
     position: absolute;
-    top: 70px;
+    top: 120px;
     right: 0px;
     z-index: 10000;
     border-radius: 5%;
