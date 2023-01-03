@@ -11,15 +11,72 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+   
+
+    display: grid;
+    grid-template-columns: minmax(250px, 300px) 200px;
+    grid-template-areas:
+      "logo menu";
+    grid-gap: 0 1em;
+
+    position: relative;
+    margin-bottom: 50px;
+    
+
+}
+.left {
+   
+    grid-area: logo;
 }
 
-.left,
 .right {
+   
+    align-items: center;
+    justify-content: center;
+    grid-area: menu;
+    
+    align-self: center;;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;;
+}
+
+
+
+#menuImage {
+    width: 30%;
+}
+
+
+.hideMenu {
+    visibility: hidden;
+    display: none;
+    height: 0px;
+}
+
+.showMenu {
+    
+    
+    display: block;
+    visibility: visible;
+    background: lightblue;
+    opacity: 60%;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    z-index: 10000;
+    border-radius: 5%;
+
+    
+    
+    
+    
+}
+
+.locator h4 {
+    display: inline-block;
 }
 
 
@@ -49,7 +106,7 @@ main {
 
 .image-firstfPage {
     width: 100%;
-    border-radius: 5%;
+    
    
 }
 
@@ -57,9 +114,9 @@ main {
     position: absolute;
     bottom: 10px;
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     width: 70%;
-    padding-left: 1em;
+    padding-left: 2em;
     padding-right: 1em;
     line-height: 1.5;
 }
@@ -79,8 +136,8 @@ a:visited{
 
 .image-me {
     width: 30%;
-    
     border-radius: 50%;
+
     margin-left: 2em;
 }
 
@@ -95,7 +152,7 @@ a:visited{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 10%;
+    
 
     
 
@@ -105,6 +162,8 @@ a:visited{
     box-shadow: 10px 10px 5px #ccc;
     -moz-border-radius:25px;
     -webkit-border-radius:25px;
+    border-radius:25px;
+    
 
 }
 
@@ -126,12 +185,34 @@ footer {
     display: grid;
     margin: auto;
     width: 100%;
-    border-radius: 5%;
+    
 }
 
 
 
 @media (min-width: 600px) {
+    header {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+
+
+    #menuImage {
+    
+        display: none;
+        height: 0px;
+    }
+
+    .bigScreen {
+        display: block;
+        visibility: visible;
+    }
+
+    
 
     .image-firstfPage,
     .image-article {
@@ -144,13 +225,13 @@ footer {
     .image-article {
         max-height: 70%;
         max-width: 70%;
-        border-radius: 5%;
+    
     }
 
     .summary {
         font-size: 1em;
         bottom: 30px;
-        width: 40%;
+        width: 60%;
     }
     
     .article {
@@ -168,8 +249,8 @@ footer {
     .projects {
         padding: 2em;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1em 1em;
-        max-width: 80%;
+        grid-gap: 1em 2em;
+        max-width:100%;
         margin: auto;
         line-height: 1.5;
         
