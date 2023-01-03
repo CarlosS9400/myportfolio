@@ -14,7 +14,7 @@ header {
    
 
     display: grid;
-    grid-template-columns: minmax(250px, 300px) 200px;
+    grid-template-columns: 300px 2fr;
     grid-template-areas:
       "logo menu";
     grid-gap: 0 1em;
