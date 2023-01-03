@@ -25,7 +25,7 @@ header {
 
 }
 .left {
-    background: red;
+   
     grid-area: logo;
 }
 
