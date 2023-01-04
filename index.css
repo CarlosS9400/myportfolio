@@ -14,7 +14,9 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    margin-bottom: 50px;
 
 }
 
@@ -23,16 +25,22 @@ header {
    
    display: flex;
    width: 50%;
-   justify-content: start;
+   justify-content: center;
    align-items: center;
    gap: 1em;
     
 }
 
 #menu {
-    
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    
+}
+
+#menu h4 {
+    
+    margin-bottom: 0.2em;
 }
 
 
@@ -179,7 +187,9 @@ footer {
         
     }
 
-
+   #menu {
+     flex-direction: row;
+   }
 
     #menuImage,
     #closeImage {
