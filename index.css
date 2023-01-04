@@ -18,11 +18,27 @@ header {
 
 }
 
-#logoArea {
+#logoArea, 
+#menu {
    
    display: flex;
+   width: 50%;
+   justify-content: start;
+   align-items: center;
+   gap: 1em;
     
 }
+
+#menu {
+    
+    justify-content: end;
+   
+}
+
+
+
+
+
 
 
 
