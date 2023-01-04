@@ -1,21 +1,16 @@
-const menuImage = document.getElementById("menuImage")
-const closeImage = document.getElementById("closeImage")
-const menu = document.getElementById("menu")
+const menuImage = document.getElementById("menu-image")
+const theMenu = document.getElementById("menu")
 
-
+console.log(theMenu)
 
 menuImage.addEventListener("click", function(){
 
-    menu.classList.toggle("showMenu")
-    closeImage.style.display = "block"
+   
+    theMenu.classList.toggle("showMenu")
+    
 })
 
-closeImage.addEventListener("click", function(){
-  
-    menu.classList.toggle("showMenu")
-    menu.style.zIndex = 999999;
-    closeImage.style.display = "none"
-})
+
 
 
 
