@@ -99,22 +99,32 @@ p {
 
 
 main {
-    position: relative;
+
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    
+
+
+    
 }
 
 
 .image-firstfPage {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
     width: 100%;
-    
-   
+
 }
 
 .summary {
-    position: absolute;
+
+    grid-column: 1/4;
+    grid-row: 2/-1;
+    align-self: end;
     bottom: 10px;
-    color: white;
-    font-size: 0.5rem;
-    width: 70%;
+    color: white;;
+    font-size: 0.8rem;
+    width: 100%;
     padding-left: 2em;
     padding-right: 1em;
     line-height: 1.5;
