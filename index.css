@@ -5,16 +5,17 @@
 }
 
 body {
+
     font-family: 'Roboto', sans-serif;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
-    position: relative;
+    
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     margin-bottom: 50px;
 
@@ -23,10 +24,15 @@ header {
 #logoArea {
    
    display: flex;
-   width: 50%;
+   width: 60%;
    justify-content: start;
    align-items: center;
-   gap: 1em;
+   gap: 2em;
+   
+}
+
+#menu {
+    width: 80%;
     
 }
 
@@ -38,8 +44,10 @@ header {
 .showMenu {
     display: block;
     visibility: visible;
-    width: 70%;
+    width: 80%;
     height: 100%;
+    
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     
@@ -48,10 +56,6 @@ header {
     top: 0;
     left: 0;
     
-
-    display: flex;
-    flex-direction: row;
-
     z-index: 10000;
     
 
@@ -163,8 +167,8 @@ a:visited{
 }
 
 footer {
-    background: blue;
-    color: white;
+    background: lightblue;
+    color: black;
     text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -191,6 +195,13 @@ footer {
         display: none;
     }
 
+    #logoArea {
+        
+        justify-content: center;
+        
+    }
+
+
     #menu {
         display: block;
         visibility: visible;
@@ -203,16 +214,12 @@ footer {
         
         margin-right: 2em;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
         
+    }
 
-      
-
-       
-        
-        
-
-      
+    .logo {
+        display: none;
     }
 
 
@@ -222,6 +229,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+       
         
    
         
