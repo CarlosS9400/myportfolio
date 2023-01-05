@@ -118,7 +118,7 @@ main {
 
 .summary {
 
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 2/-1;
     align-self: start;
     bottom: 10px;
