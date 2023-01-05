@@ -113,6 +113,7 @@ main {
     grid-column: 1/-1;
     grid-row: 1/-1;
     width: 100%;
+    height: 100%;
 
 }
 
@@ -157,6 +158,10 @@ a:visited{
     place-items: center;
     
     
+}
+
+.project {
+    text-align: center;
 }
 
 .image-project {
