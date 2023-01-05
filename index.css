@@ -150,6 +150,8 @@ a:visited{
     margin-left: 2em;
 }
 
+/*for smaller screen, just center everythihg. */
+
 .projects {
     display: grid;
     place-items: center;
@@ -293,6 +295,11 @@ footer {
         margin: auto;
         line-height: 1.5;
         
+        
+    }
+
+    .projects h2 {
+        text-align: center;
     }
 
     .recentArticle {
