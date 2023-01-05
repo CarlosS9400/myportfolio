@@ -207,18 +207,18 @@ footer {
         visibility: visible;
 
 
-        width: 50%;
+        
         top: 0px;
 
         display: flex;
         
-        margin-right: 2em;
+        
         align-items: center;
         justify-content: center;
         
     }
 
-    .logo {
+    #menu .logo {
         display: none;
     }
 
