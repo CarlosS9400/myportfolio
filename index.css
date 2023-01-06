@@ -100,10 +100,7 @@ p {
 
 
 
-.project h2 {
-    margin-bottom: 0.3em;
-    text-align: center;
-}
+
 
 
 main {
@@ -163,6 +160,44 @@ a:visited{
     place-items: center;
     
     
+}
+
+.project {
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+      "name date"
+      "image image"
+      "description description";
+      grid-gap: 1em;
+}
+
+#articleName {
+    grid-area: name;
+}
+
+#articleDate {
+    grid-area: date;
+}
+
+#articleName,
+#articleDate {
+    justify-self: center;
+    align-self: baseline;
+}
+
+#articleImage {
+    grid-area: image;
+}
+
+#articleContent {
+    grid-area: description;
+}
+
+.recentArticle {
+    text-align: center;
+    grid-column: 1/-1;
 }
 
 .image-project {
@@ -311,11 +346,6 @@ footer {
 
     .projects h2 {
         text-align: center;
-    }
-
-    .recentArticle {
-        text-align: center;
-        grid-column: 1/-1;
     }
 
     .bio-info {
