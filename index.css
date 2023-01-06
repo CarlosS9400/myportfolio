@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -14,25 +15,36 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 50px;
+
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
 }
 
 #logoArea {
    
    display: flex;
-   width: 70%;
-   justify-content: start;
+   justify-content: center;
    align-items: center;
-   gap: 2em;
+   gap: 1em;
+   align-self: center;
+   
    
 }
 
 #menu {
-    width: 80%;
+    width: 75%;
+}
+
+/* menu image - reduce size */
+#menu-image {
+    width: 42px;
+    height: 35px;
+    justify-self: center;
+    align-self: center;
     
 }
 
@@ -67,14 +79,6 @@ header {
 }
 
 
-
-/* menu image - reduce size */
-#menu-image {
-    width: 42px;
-    height: 35px;
-    
-}
-
 .aboutme {
     padding-left: 2em;
 }
@@ -102,10 +106,7 @@ main {
 
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr  / 1fr 1fr 1fr 1fr;
-    
-
-
-    
+        
 }
 
 
@@ -208,25 +209,34 @@ footer {
 
 @media (min-width: 600px) {
 
+    header {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
     #menu-image {
         display: none;
     }
 
     #logoArea {
         
+        width: 50%;
         justify-content: center;
+        
         
     }
 
 
     #menu {
+        
+        width: 50%;
         display: block;
         visibility: visible;
 
-
-        
         top: 0px;
-
         display: flex;
         
         
@@ -239,20 +249,10 @@ footer {
         display: none;
     }
 
-
-
-    header {
-        font-size: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-       
-        
-   
-        
+    main {
+        height: 60vh;
     }
 
-   
 
     #menuImage {
     
@@ -276,8 +276,8 @@ footer {
 
     .summary {
         font-size: 1em;
-        bottom: 30px;
-        width: 60%;
+       
+        
     }
     
     .article {
