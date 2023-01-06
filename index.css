@@ -98,8 +98,11 @@ p {
     margin-bottom: 1em;
 }
 
+
+
 .project h2 {
     margin-bottom: 0.3em;
+    text-align: center;
 }
 
 
@@ -160,10 +163,6 @@ a:visited{
     place-items: center;
     
     
-}
-
-.project {
-    text-align: center;
 }
 
 .image-project {
