@@ -165,12 +165,12 @@ a:visited{
 .project {
     
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1em 1fr 1fr 1em;
     grid-template-areas: 
-      "name date"
-      "image image"
-      "description description";
-      grid-gap: 1em;
+      ".name date."
+      ".image image."
+      ".description description.";
+      grid-gap: 0 0.2em;
 }
 
 #articleName {
@@ -185,7 +185,7 @@ a:visited{
 #articleDate {
     justify-self: center;
     align-self: baseline;
-    justify-self: center;
+    
     
 }
 
