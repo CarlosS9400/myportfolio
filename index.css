@@ -157,8 +157,7 @@ a:visited{
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
+    place-items: center;
     
     
 }
@@ -334,6 +333,17 @@ footer {
         min-width: 80%;
         
        
+    }
+
+    .projects {
+        padding: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em 2em;
+        max-width:100%;
+        margin: auto;
+        line-height: 1.5;
+        
+        
     }
 
     .projects h2 {
