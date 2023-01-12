@@ -1,12 +1,12 @@
 const menuImage = document.getElementById("menu-image")
-const theMenu = document.getElementById("menu")
+const subMenu = document.getElementById("sub-menu")
 
-console.log(theMenu)
+
 
 menuImage.addEventListener("click", function(){
 
    
-    theMenu.classList.toggle("showMenu")
+    subMenu.classList.toggle("showMenu")
     
 })
 
